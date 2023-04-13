@@ -5,11 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desifrador de texto</title>
+    <!-- favicon -->
     <link rel="icon" href="./favicon.png">
+
+    <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <main class="main">
+        <section class="main__content">
+            <div class="main__content__header">
+                <header  class="header">
+                    <img class="header__logo" src="./images/logo.png" alt="icono de la pagina"><h1  class="header__title">Encriptador de texto</h1>
+                </header> 
+                <textarea value="" autofocus class="text"contenteditable  placeholder="Ingrese texto aqui" ></textarea>
+            </div>
+            <div class="main__buttons">
+                <p class="f-12" > &#10071; Apenas letras minusculas y sin acentos</p>
+                <div class="main__buttons__content">
+                    <button class="button button--primary">Encriptar</button>
+                    <button class="button button--primary-outline">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <div class="sidebar__content">
+                <img src="./images/Muñeco.png" class="d-none"alt="imagen para ilustar resultados">
+                <h3 class="text-center f-24">Ningún mensaje fue encontrado </h3>
+                <p class="text-center f-16">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="button button-outline">Copiar</button>
+        </aside>
+    </main>
+    <footer class="footer">
+        <p >Realizado con dedicacion por Deimer Hernandez 2023 </p>
+    </footer>
 
     <script src="./js/app.js"></script>
 </body>

@@ -1,0 +1,228 @@
+
+:root {
+    --bg-body: #F3F5FC;
+    --bg-white:#fff;
+    --bg-gray:#495057;
+    --bg-primary:#0A3871;
+    --bg-primary-hover:#052051;
+    --bg-blue-light:#D8DFE8;
+    --bg-blue-light-hover:#AAB2D5;
+    --font-body: 'Inter', sans-serif;
+    --font-color-title:#0A3871;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+
+    background-color:var(--bg-body);
+    font-family: var(--font-body);
+}
+.main{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: calc(100% - 400px) 400px;
+}
+.main__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main__content__header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items:center ;
+    margin-bottom: 40px;
+}
+.header__logo{
+    width: 44px;
+    height: 44px;
+}
+.header__title{
+    color: var(--font-color-title);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sidebar{
+    height: 100%;
+    background-color: var(--bg-white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 0px;
+    
+}
+.text{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    max-width: 577px;
+    min-height: 360px;
+    text-align: left;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--bg-primary);
+}
+.text::-webkit-scrollbar {
+    width: 8px;            
+}
+  
+.text::-webkit-scrollbar-track {
+    background: var(--bg-blue-light);        
+}
+  
+.text::-webkit-scrollbar-thumb {
+    background-color:#757FB2;   
+    border-radius: 20px;       
+   
+}
+.text:empty::before {
+    position: absolute;
+    content: "Escribe aquí...";
+  }
+.text::placeholder {
+    color: var(--bg-primary);
+    font-size: 2rem;
+  }
+.sidebar__content{
+    padding: 32px;
+}
+.text-center{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.f-24{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.f-16{
+    font-size: 1rem;
+}
+.f-12{
+    font-size: 0.75rem;
+}
+.main__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main__buttons__content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.button{
+    width: 328px;
+    padding: 24px;
+    border: none;
+    border-radius: 24px;
+}
+
+.button--primary{
+    background: var(--bg-primary);
+    color: var(--bg-white);
+    font-size: 1rem;
+    transition: .3s all;
+}
+
+.button--primary:hover{
+    background: var(--bg-primary-hover);
+}
+
+button.button--primary-outline{
+    background: var(--bg-blue-light);
+    color: var(--bg-primary);
+    border: 1px solid var(--bg-primary) ;
+    transition: .3s all;
+}
+button.button--primary-outline:hover{
+    background: var(--bg-blue-light-hover);
+    color: var(--bg-white);
+
+}
+.button-outline{
+    background-color: var(--bg-white);
+    color: var(--bg-primary);
+    border: 1px solid var(--bg-primary);
+    transition: 0.5s all;
+}
+
+.button-outline:hover{
+    background-color: var(--bg-primary);
+    color: var(--bg-white);
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+.footer p {
+    font-size: 14px;
+}
+@media screen and (max-width:480px) {
+    .main{
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+    .header{
+        margin-bottom: 0;
+    }
+    .button{
+        width: 100%;
+    }
+    .main__content{
+        margin-bottom: 64px;
+    }
+    .main__buttons__content{
+        flex-direction: column;
+    }
+    .d-none{
+        display: none;
+    }
+
+    .f-24{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .f-16{
+        font-size: 1rem;
+    }
+    .f-12{
+        font-size: 0.75rem;
+    }
+ 
+    .text{
+        padding: 40px 0px;
+    }
+    .sidebar__content, .sidebar{
+        padding: 15px;
+    }
+    .header__title ,.text{
+        font-size: 24px;
+    }
+    .main__buttons__content{
+      
+    }
+}

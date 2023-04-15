@@ -24,21 +24,26 @@
                 <header  class="header">
                     <img class="header__logo" src="./images/logo.png" alt="icono de la pagina"><h1  class="header__title">Encriptador de texto</h1>
                 </header> 
-                <textarea value="" autofocus class="text"contenteditable  placeholder="Ingrese texto aqui" ></textarea>
+                <textarea value="" id="text" autofocus class="text"  placeholder="Ingrese texto aqui" ></textarea>
             </div>
             <div class="main__buttons">
                 <p class="f-12" > &#10071; Apenas letras minusculas y sin acentos</p>
                 <div class="main__buttons__content">
-                    <button class="button button--primary">Encriptar</button>
-                    <button class="button button--primary-outline">Desencriptar</button>
+                    <button class="button button--primary" id="encrypt">Encriptar</button>
+                    <button class="button button--primary-outline" id="decrypt">Desencriptar</button>
                 </div>
             </div>
         </section>
         <aside class="sidebar">
             <div class="sidebar__content">
-                <img src="./images/Muñeco.png" class="d-none"alt="imagen para ilustar resultados">
-                <h3 class="text-center f-24">Ningún mensaje fue encontrado </h3>
-                <p class="text-center f-16">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <span id="message"></span>
+                <div id="no-message">
+                    <img src="./images/Muñeco.png" class="d-none"alt="imagen para ilustar resultados">
+              
+                    <h3 class="text-center f-24">Ningún mensaje fue encontrado </h3>
+                    <p class="text-center f-16">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                
             </div>
             <button class="button button-outline">Copiar</button>
         </aside>

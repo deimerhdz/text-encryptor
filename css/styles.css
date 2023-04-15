@@ -63,9 +63,15 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 16px 0px;
     
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
 }
 .text{
     width: 100%;

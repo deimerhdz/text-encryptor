@@ -81,6 +81,7 @@ body{
     min-height: 360px;
     text-align: left;
     outline: none;
+    text-transform: lowercase;
     border: none;
     font-size: 2rem;
     color: var(--bg-primary);

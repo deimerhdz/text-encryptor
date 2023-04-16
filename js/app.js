@@ -5,7 +5,7 @@ var copyButton = document.querySelector('#copy');
 var result = document.getElementById('message');
 var values = ['ai','enter','imes','ober','ufat'];
 function handleEncrytionButton(){
-    encryptText(text.value.trim());
+    encryptText(text.value.toLowerCase().trim());
 }
 function copy(){
     if(result.textContent.length>0){
@@ -17,7 +17,7 @@ function copy(){
   
 }
 function handleDecryptText(){
-    decryptText(text.value.trim());
+    decryptText(text.value.toLowerCase().trim());
 }
 function showMessage(message){
     result.innerHTML = message;
@@ -83,6 +83,7 @@ function checkEmptyText(event){
     document.getElementById('no-message').classList.add('show');
  }
 }
+
 encriptButton.addEventListener('click',handleEncrytionButton);
 decryptButton.addEventListener('click',handleDecryptText);
 copyButton.addEventListener('click',copy);

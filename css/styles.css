@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     width: 100%;
@@ -141,6 +142,9 @@ body{
     width: 328px;
     padding: 24px;
     border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
     border-radius: 24px;
 }
 .button--primary{
@@ -154,13 +158,13 @@ body{
     background: var(--bg-primary-hover);
 }
 
-button.button--primary-outline{
+a.button--primary-outline{
     background: var(--bg-blue-light);
     color: var(--bg-primary);
     border: 1px solid var(--bg-primary) ;
     transition: .3s all;
 }
-button.button--primary-outline:hover{
+a.button--primary-outline:hover{
     background: var(--bg-blue-light-hover);
     color: var(--bg-white);
 
